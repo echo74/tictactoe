@@ -1,4 +1,4 @@
--- tictactoe.lua
+-- main.lua
 -- basic tictactoe game using LOVE
 
 
@@ -36,7 +36,7 @@ function drawBoard(board)
         love.graphics.draw(getPiece(board[v]), 100+x_offset, 50+y_offset)
         x_offset = x_offset + 150
         if x_offset > 450 then
-            
+
     end
 end
 
