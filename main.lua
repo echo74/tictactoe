@@ -1,3 +1,4 @@
+
 -- tictactoe.lua
 -- basic tictactoe game using LOVE
 
@@ -15,11 +16,9 @@ function love.load()
     blank = love.graphics.newImage("assets/blank.png")
     naught = love.graphics.newImage("assets/naught.png")
     cross = love.graphics.newImage("assets/cross.png")
-
 end
 
 
---update
 function love.update(dt)
 
 end
