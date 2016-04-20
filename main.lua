@@ -16,6 +16,8 @@ function love.load()
     blank = love.graphics.newImage("assets/blank.png")
     naught = love.graphics.newImage("assets/naught.png")
     cross = love.graphics.newImage("assets/cross.png")
+    -- load images for side panel
+    
 end
 
 
@@ -26,13 +28,15 @@ end
 --draw
 function love.draw()
     drawBoard(board)
+    -- drawPanel()
 
 end
 
 
 -- functions
 function drawBoard(board)
-    -- loop through each position on the board
+    -- loop through each position on the board and
+    -- and draw the current positions
     local x_offset = 64
     local y_offset = 64
     local start_x = 100
@@ -46,7 +50,14 @@ function drawBoard(board)
     end
 end
 
+function drawPanel()
+    -- draw the side panel with player indicator and
+    -- current scores (wins/losses)
+end
+
 function getPiece(number)
+    -- convert the number in the board array
+    -- into an image
     if number == 0 then
         return blank
     elseif number == 1 then
